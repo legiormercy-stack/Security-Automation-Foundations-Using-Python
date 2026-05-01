@@ -18,7 +18,6 @@ To develop foundational security automation skills by using Python to parse and 
 - Visual Studio Code for development environment.
 - Sample log file (sample.log) for input data for analysis.
 
-## Steps
 
 ### Code Description
 
@@ -29,7 +28,7 @@ The code performs the following actions:
 - Identifies failed login attempts using keyword matching (“Failed login”)
 - Extracts IP addresses from each relevant log entry
 - Tracks the number of failed attempts per IP address using a dictionary
-- 
+  
 Outputs:
 <img width="1366" height="720" alt="Screenshot (564)" src="https://github.com/user-attachments/assets/b0be735b-175b-4a11-832a-c8c3776dec35" />
 
