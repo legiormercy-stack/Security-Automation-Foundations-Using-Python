@@ -1,4 +1,4 @@
-[log_analyzer.py](https://github.com/user-attachments/files/27276126/log_analyzer.py)# Security-Automation-Foundations-Using-Python
+# Security-Automation-Foundations-Using-Python
 
 ## Objective
 To develop foundational security automation skills by using Python to parse and analyze log files, detect failed login attempts, and generate summarized security insights for incident detection.
