@@ -21,11 +21,11 @@ To develop foundational security automation skills by using Python to parse and 
 ## Steps
 [Uploading log# log_analyzer.py
 
-# Read sample log file
+#Read sample log file
 with open("sample.log", "r") as file:
     logs = file.readlines()
 
-# Detect failed logins
+#Detect failed logins
 failed_ips = {}
 for line in logs:
     if "Failed login" in line:
@@ -37,7 +37,7 @@ for line in logs:
         else:
             failed_ips[ip] = 1
 
-# Print summary
+#Print summary
 print("\nSummary of failed logins by IP:")
 for ip, count in failed_ips.items():[sample.log](https://github.com/user-attachments/files/27276144/sample.log)
 
