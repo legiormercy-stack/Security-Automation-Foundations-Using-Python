@@ -19,43 +19,10 @@ To develop foundational security automation skills by using Python to parse and 
 - Sample log file (sample.log) for input data for analysis.
 
 ## Steps
-[Uploading log# log_analyzer.py
-
-#Read sample log file
-with open("sample.log", "r") as file:
-    logs = file.readlines()
-
-#Detect failed logins
-failed_ips = {}
-for line in logs:
-    if "Failed login" in line:
-        print("Alert detected:", line.strip())
-        # Extract IP (assumes last part of line is IP)
-        ip = line.strip().split()[-1]
-        if ip in failed_ips:
-            failed_ips[ip] += 1
-        else:
-            failed_ips[ip] = 1
-
-#Print summary
-print("\nSummary of failed logins by IP:")
-for ip, count in failed_ips.items():[sample.log](https://github.com/user-attachments/files/27276144/sample.log)
-
-    print(f"{ip}: {count} failed attempts")
-
-
-_analyzer.py…]()
-
-
-[Uploading sample.log…]()
-2026-02-19 08:12:45 Failed login from 192.168.1.10
-2026-02-19 08:13:00 Successful login from 192.168.1.12
-2026-02-19 08:14:21 Failed login from 10.0.0.5
-2026-02-19 08:15:00 Failed login from 192.168.1.10
 
 ### Code Description
 
-This code performs the following actions:
+The code performs the following actions:
 
 - Reads log data from a file (sample.log)
 - Iterates through each log entry
